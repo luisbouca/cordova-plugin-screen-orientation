@@ -44,6 +44,9 @@
     </platform>
 
     <platform name="android">
+
+        <hook type="before_prepare" src="hooks/android/removeConfigChanges.js" />
+
         <source-file src="src/android/CDVOrientation.java" target-dir="src/cordova/plugins/screenorientation/" />
 
         <config-file target="res/xml/config.xml" parent="/*">
